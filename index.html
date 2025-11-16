@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced To-Do with Deadline</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>📝 Advanced To-Do App</h1>
+
+    <div class="input-box">
+      <input id="taskInput" type="text" placeholder="Enter task..." />
+      <input id="deadlineInput" type="datetime-local">
+      <select id="priorityInput">
+        <option value="Low">Low Priority</option>
+        <option value="Medium">Medium Priority</option>
+        <option value="High">High Priority</option>
+      </select>
+      <button id="addBtn">Add</button>
+    </div>
+
+    <progress id="progressBar" value="0" max="100"></progress>
+    <p id="progressText">0% Completed</p>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <audio id="alertSound" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
